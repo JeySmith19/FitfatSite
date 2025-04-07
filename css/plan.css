@@ -1,0 +1,234 @@
+/* Estilos para el título */
+h1 {
+    font-size: 36px;
+    margin: 80px 0 20px; /* Añade un margen superior mayor para desplazar el título hacia abajo */
+    text-align: center;
+    color: #000000;
+}
+
+/* Estilos para los días de la semana */
+h3 {
+    color: #D052D2;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/* Estilos para los nombres de las comidas */
+h6 {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Estilos para las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Estilos para descripciones de las comidas */
+ul li {
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+}
+
+/* Estilos para los días de la semana y sus contenidos */
+.day {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.day li {
+    flex: 0 1 calc(25% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #D052D2;
+}
+
+
+
+
+/* Estilos para el formulario de pago */
+.checkout button {
+    display: block;
+    margin: 100px 0; /* Agrega un margen vertical de 10px y 0 a cada botón */
+}
+
+
+/*======ESTILO PARA EL FOOTER Y MAIN======*/
+footer{
+    background: rgba(136, 61, 138, 255);
+    position: relative;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+/*======== Barra de navegación ===============*/
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Estilos para el encabezado */
+header {
+    position: absolute;
+    top: 0;
+    right: 53.6px; /* 67% del tamaño original */
+    padding: 6.7px; /* 67% del tamaño original */
+    background-color: #FFFFFF;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+}
+/* Estilo para el elemento "INICIO" en el menú de navegación */
+nav li:first-child a {
+    color: #BA47EB;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 9.38px 10.72px; /* 67% del tamaño original */
+    text-decoration: none;
+}
+/* Estilos para el contenido principal */
+main {
+    margin-top: 46.9px; /* 67% del tamaño original */
+}
+
+/*======== Barra de navegación ===============*/
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+/* Estilos para el efecto de reflexión */
+nav::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: #333;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+/* Estilos para el header */
+header {
+    background-color: transparent; /* Fondo transparente */
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: fixed;
+    display: inline-block;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9; /* Color de fondo del menú */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: -20px; /* Ajusta el valor de 'left' para que el menú se despliegue hacia la izquierda */
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333; /* Color de texto enlaces del menú */
+}
+
+/* Estilos para el botón */
+.ingresa-btn {
+    margin-left: 240px;
+    top: 5px; /* Ajusta el margen inferior para mover el botón hacia arriba */
+    background-color: #D052D2; /* Color de fondo del botón */
+    padding: 10px 18px; /* Ajusta el padding según tu preferencia */
+    text-decoration: none;
+    color: #fff; /* Color de texto del botón */
+    border-radius: 4px; /* Agrega bordes redondeados al botón */
+    position: absolute;
+}
+
+.hamburguesa {
+    font-size: 30px; /* Tamaño del símbolo de las tres rayas */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    margin-left: -20px;
+    background: none;
+    border: none;
+    color: #000;
+
+}
+.logo-completo {
+    width: 170px;
+    margin-top: -15px;
+    margin-right: 125px;
+}
+
+@media (max-width: 800px) {
+/* Estilos para descripciones de las comidas */
+ul li {
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+    width: calc(50% - 20px); /* Ajusta el ancho para que haya dos columnas y margen entre ellas */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+/* Estilos para los días de la semana y sus contenidos */
+.day {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0; /* Elimina el padding para que no haya espacio adicional */
+}
+
+.day li {
+    flex: 0 1 calc(50% - 20px); /* Ajusta el ancho para que haya dos columnas y margen entre ellas */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #D052D2;
+}
+
+}

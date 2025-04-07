@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/hoja.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Fitfat</title>
+</head>
+<body class="pagina-ingresa">
+    <header></header>	
+
+    <section class="banner">
+        <div class="containerR">
+            <div class="cR-imgBanner">
+                <a href="index.html">
+                    <img src="img/comidaSaludable.jpeg" alt="" width="100">
+                </a>
+            </div>
+            <div class="cR-content">
+                <h5>Ingresa Tu Usuario</h5><br>
+                <h3>Usuario o número telefónico</h3>
+                <form action="inicio_sesion.php" method="post">
+                    <h3>Usuario o número telefónico</h3>
+                    <input type="email" name="correo" required>
+                    <h3>Contraseña</h3>
+                    <input type="password" name="contrasena" required><br><br>
+                    <div>
+                        <input type="submit" class="btnBanner" value="Iniciar Sesión">
+                    </div>
+                </form>
+                <br><br>
+                <div>
+                    <a href="index.html">
+                        <img src="img/Registrate.png" class="imgRegister" alt="" width="100">
+                    </a>
+                </div>
+                <br><br>
+                <p>
+                    <a href="recuperar_contrasena.html">¿Olvidaste tu contraseña?</a>
+                </p>
+                <a href="registro.html">Regístrate en Fitfat</a>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+    <script>
+        // Función para redirigir a "index copy.html" cuando el ancho de la ventana sea menor que 900px
+        function redirigirSegunAnchoDePantalla() {
+          if (window.innerWidth < 900) {
+            window.location.href = "ingresamobile.html";
+          }
+        }
+        
+        // Verificar el ancho de la ventana cuando se carga la página
+        window.addEventListener("load", function () {
+          redirigirSegunAnchoDePantalla();
+        });
+        
+        // Verificar el ancho de la ventana cuando se cambia su tamaño
+        window.addEventListener("resize", function () {
+          redirigirSegunAnchoDePantalla();
+        });
+        </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

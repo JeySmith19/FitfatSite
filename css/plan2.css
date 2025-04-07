@@ -1,0 +1,198 @@
+/* Estilos para los días de la semana */
+h1 {
+    color: #D052D2;
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/* Estilos para los nombres de los grupos musculares */
+h6 {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilos para las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Estilos para las descripciones de los ejercicios */
+p {
+    text-align: center;
+}
+
+/* Estilos para los contenedores de los ejercicios */
+.exercise {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.exercise-item {
+    flex-basis: calc(25% - 20px); /* Each item takes 25% of the available width for 4 columns */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #D052D2;
+}
+
+/* Estilos para el título */
+h1 {
+    font-size: 36px;
+    margin: 80px 0 20px; /* Añade un margen superior mayor para desplazar el título hacia abajo */
+    text-align: center;
+    color: #000000;
+}
+
+
+
+/* Estilos para el contenedor principal */
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    padding-bottom: 100px; /* Ajusta el espacio inferior para dejar lugar al footer */
+}
+
+/* Estilos para el encabezado */
+header {
+    position: absolute;
+    top: 0;
+    right: 53.6px; /* 67% del tamaño original */
+    padding: 6.7px; /* 67% del tamaño original */
+    background-color: #FFFFFF;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    margin-top: -80px; /* Ajusta este valor según el alto de tu encabezado */
+
+}
+
+/* Estilo para el elemento "INICIO" en el menú de navegación */
+nav li:first-child a {
+    color: #BA47EB;
+}
+/* Estilos para el contenido principal */
+main {
+    margin-top: 46.9px; /* 67% del tamaño original */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 9.38px 10.72px; /* 67% del tamaño original */
+    text-decoration: none;
+}
+
+/* Estilos para las secciones principales */
+main section {
+    margin: 1.34em; /* 67% del tamaño original */
+}
+
+
+
+/*======ESTILO PARA EL FOOTER Y MAIN======*/
+footer{
+    background: rgba(136, 61, 138, 255);
+    position: relative;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+
+
+
+/* Estilos para el header */
+header {
+    background-color: transparent; /* Fondo transparente */
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: fixed;
+    display: inline-block;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9; /* Color de fondo del menú */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: -20px; /* Ajusta el valor de 'left' para que el menú se despliegue hacia la izquierda */
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333; /* Color de texto enlaces del menú */
+}
+
+/* Estilos para el botón */
+.ingresa-btn {
+    margin-left: 240px;
+    top: 5px; /* Ajusta el margen inferior para mover el botón hacia arriba */
+    background-color: #D052D2; /* Color de fondo del botón */
+    padding: 10px 18px; /* Ajusta el padding según tu preferencia */
+    text-decoration: none;
+    color: #fff; /* Color de texto del botón */
+    border-radius: 4px; /* Agrega bordes redondeados al botón */
+    position: absolute;
+}
+
+.hamburguesa {
+    font-size: 30px; /* Tamaño del símbolo de las tres rayas */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    margin-left: -20px;
+    background: none;
+    border: none;
+    color: #000;
+
+}
+.logo-completo {
+    width: 170px;
+    margin-top: -15px;
+    margin-right: 125px;
+}
+/* Estilos específicos para pantallas más pequeñas (800px o menos) */
+@media (max-width: 800px) {
+    .exercise {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .exercise-item {
+        flex-basis: calc(50% - 20px);
+        margin: 10px 0;
+    }
+}
+
